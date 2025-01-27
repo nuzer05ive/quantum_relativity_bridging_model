@@ -1,0 +1,39 @@
+ # Operating system files
+.DS_Store
+Thumbs.db
+
+# Python
+*.pyc
+__pycache__/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Node.js
+node_modules/
+
+# Compiled files
+*.out
+*.class
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Build artifacts
+/dist/
+/build/
+/target/
+
+# IDE settings
+.idea/
+.vscode/
+
+# Documentation artifacts
+docs/_build/
