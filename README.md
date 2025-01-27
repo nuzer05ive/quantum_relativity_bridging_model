@@ -39,25 +39,28 @@ BridGIT, the core of this model, serves as a tool for tailoring AI to meet users
 
 ### Installation
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/quantum_relativity_bridging_model.git
-   cd quantum_relativity_bridging_model
 
-	2.	Set up the environment:
+ 	```bash
+  	 git clone https://github.com/username/quantum_relativity_bridging_model.git
+  	 cd quantum_relativity_bridging_model
+   
 
-python -m venv env
-source env/bin/activate  # On Windows: env\Scripts\activate
-pip install -r requirements.txt
+2. Set up the environment:
 
-Contribution
+	 ```bash
+	python -m venv env
+	source env/bin/activate  # On Windows: env\Scripts\activate
+	pip install -r requirements.txt
+
+## Contribution
 
 We welcome contributions from individuals and organizations! Please read our CONTRIBUTING.md to get started.
 
-License
+## License
 
 This project is licensed under the MIT License. See LICENSE for more details.
 
-Contact
+## Contact
 
 For inquiries or collaboration opportunities, reach out to:
 Nicholas Rood (Niik Rood)
