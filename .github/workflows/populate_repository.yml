@@ -1,9 +1,3 @@
-# Recreating YAML workflow file for populating GitHub repository structure
-
-import os
-
-# Define the YAML content
-workflow_content = """
 name: Populate QRBM Repository
 
 on:
@@ -47,16 +41,3 @@ jobs:
         git add .
         git commit -m "Initialize QRBM repository structure with publication folders"
         git push
-"""
-
-# Define the workflow file path
-base_folder = "QRBM_Repository"
-workflow_path = os.path.join(base_folder, ".github/workflows/populate_repository.yml")
-os.makedirs(os.path.dirname(workflow_path), exist_ok=True)
-
-# Write the workflow file
-with open(workflow_path, "w") as file:
-    file.write(workflow_content)
-
-# Confirm the workflow file path
-workflow_path
