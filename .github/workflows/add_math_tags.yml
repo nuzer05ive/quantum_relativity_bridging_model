@@ -1,0 +1,74 @@
+name: Add Math Tags to Manuscript
+
+on:
+  workflow_dispatch:
+
+jobs:
+  add-math-tags:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Format equations and symbols with math tags
+      run: |
+        # Read the current manuscript
+        if [ -f docs/manuscript.md ]; then
+          cp docs/manuscript.md docs/manuscript_backup.md
+
+          # Apply formatting changes: Inline symbols ($) and block equations ($$)
+          sed -i -E '
+            s/\\(.*?\\)/$\1$/g;          # Inline equations: single $$
+            s/^\\\[([^]]+)]/$$\1$$/g;    # Block equations: double $$ around \[...\]
+            s/\\[([a-zA-Z]+)]/+ escape (need YAML repeat
+fi
+          fi
+---yaml file and will do error terminal correction
+
+The YAML file may have been truncated while copying, leading to improper handling or misplacement of expressions. Let me fix and expand it clearly for proper integration and ensure it works without errors.
+
+---
+
+### **Correct YAML File to Add Math Tags**
+Here’s the complete YAML workflow to ensure proper `$` and `$$` math formatting for GitHub Markdown equations and symbols.
+
+```yaml
+name: Add Math Tags to Manuscript
+
+on:
+  workflow_dispatch:
+
+jobs:
+  add-math-tags:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Add math tags to symbols and equations
+      run: |
+        # Backup the existing manuscript
+        if [ -f docs/manuscript.md ]; then
+          cp docs/manuscript.md docs/manuscript_backup.md
+        fi
+
+        # Format inline equations (e.g., $begin:math:text$E=mc^2$end:math:text$ -> $E=mc^2$)
+        sed -i -E 's/\$begin:math:text$([^)]+)\\$end:math:text$/$\1$/g' docs/manuscript.md
+
+        # Format block equations (e.g., \[E=mc^2\] -> $$E=mc^2$$)
+        sed -i -E 's/^\\$begin:math:display$(.+)$end:math:display$$/$$\1$$/g' docs/manuscript.md
+
+        # Escape special characters to avoid issues in Markdown (if needed)
+        sed -i -E 's/\\([_^])/\\\1/g' docs/manuscript.md
+
+        echo "Math tags added to equations and symbols in manuscript.md"
+
+    - name: Commit updated manuscript
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git add docs/manuscript.md
+        git commit -m "Added math tags to symbols and equations"
+        git push
