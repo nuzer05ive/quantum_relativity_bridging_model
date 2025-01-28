@@ -18,10 +18,11 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Populate QRBM content
+    - name: Create Main Documentation Folder
       run: |
-        # Create main documentation folder
         mkdir -p docs
+        mkdir -p docs/visualizations
+        echo "Folders for documentation and visualizations created."
         echo "# The Quantum Relativity Bridging Model (QRBM)" > docs/manuscript.md
         echo "This folder contains the full manuscript and supporting documentation for QRBM." > docs/README.md
         # Add manuscript content to docs/manuscript.md
