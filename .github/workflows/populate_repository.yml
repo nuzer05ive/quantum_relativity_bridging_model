@@ -1,0 +1,62 @@
+# Recreating YAML workflow file for populating GitHub repository structure
+
+import os
+
+# Define the YAML content
+workflow_content = """
+name: Populate QRBM Repository
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  create-publication-structure:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up publication structure
+      run: |
+        mkdir -p submissions/arxiv
+        mkdir -p submissions/ieee
+        mkdir -p submissions/uspto
+        mkdir -p submissions/nature_physics
+        mkdir -p submissions/phys_rev_letters
+        mkdir -p visualizations/figures
+        mkdir -p visualizations/scripts
+        mkdir -p docs
+
+        echo "# ArXiv Submission" > submissions/arxiv/README.md
+        echo "# IEEE Submission" > submissions/ieee/README.md
+        echo "# USPTO Submission" > submissions/uspto/README.md
+        echo "# Nature Physics Submission" > submissions/nature_physics/README.md
+        echo "# Physical Review Letters Submission" > submissions/phys_rev_letters/README.md
+
+        echo "# QRBM Documentation" > docs/README.md
+        echo "# Visualization Figures" > visualizations/figures/README.md
+        echo "# Visualization Scripts" > visualizations/scripts/README.md
+
+    - name: Commit changes
+      run: |
+        git config --local user.name "GitHub Actions"
+        git config --local user.email "actions@github.com"
+        git add .
+        git commit -m "Initialize QRBM repository structure with publication folders"
+        git push
+"""
+
+# Define the workflow file path
+base_folder = "QRBM_Repository"
+workflow_path = os.path.join(base_folder, ".github/workflows/populate_repository.yml")
+os.makedirs(os.path.dirname(workflow_path), exist_ok=True)
+
+# Write the workflow file
+with open(workflow_path, "w") as file:
+    file.write(workflow_content)
+
+# Confirm the workflow file path
+workflow_path
