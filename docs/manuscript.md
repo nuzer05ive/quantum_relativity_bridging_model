@@ -10,9 +10,13 @@
 
 The Quantum Relativity Bridging Model (QRBM) unifies classical, quantum, and relativistic physics through recursive retrograde motion. By introducing concepts such as Rood’s Constant, FISH Factor, and L Geometries, QRBM demonstrates harmonic resonance across dynamic systems.
 
-Key validations include the sphere-to-cube harmonic growth, solutions to prime number gaps, and a recursive framework that bridges quantum and relativistic physics. QRBM powers advancements in AI, physics simulations, and universal optimization, offering profound implications for science and society.
+### Key Validations:
+- Bridging the harmonic growth of spheres and cubes to unify curved and angular geometries.
+- Solving prime number gaps using recursive retrograde harmonic resonance.
+- Modeling stable harmonic motion to solve the Three-Body Problem.
+- Bridging quantum and relativistic physics through recursive retrograde motion.
+- Powering advancements in AI, physics simulations, and universal optimization with profound implications for science and society.
 ---
-
 ## Dedication
 
 #### To Amy Fish
