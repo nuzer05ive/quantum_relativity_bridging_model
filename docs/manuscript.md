@@ -50,3 +50,35 @@ The **Quantum Relativity Bridging Model (QRBM)** addresses these challenges thro
 
 QRBM offers a unified, scalable model for analyzing and optimizing dynamic systems. Its principles transcend traditional physics and extend into fields such as artificial intelligence, optimization, and data structuring.
 ---
+## Mathematical Foundations
+
+### Vanishing Dot Retrograde Model (VDRM)
+
+The **VDRM** models recursive retrograde motion parametrically, unifying quantum and relativistic physics through harmonic resonance.
+
+\[ r(\theta) = R \cdot \cos(k \theta) + i \cdot R \cdot \sin(k \theta) \]
+
+Where:
+- \( R \): Radius of the retrograde toroidal orbit.
+- \( k \): Recursive retrograde factor linked to **Rood’s Constant**.
+- \( \Delta_{\text{dim}} = \frac{1}{\sqrt{2}} \): Dimensional stepping factor for harmonic balancing.
+
+### Rood’s Constant and Axis
+
+Rood’s Constant (\( R \)) harmonizes universal constants to bridge quantum mechanics and relativity:
+\[ R = \frac{G \cdot h}{c^3} \]
+
+Where \( G \), \( h \), and \( c \) are Newton’s gravitational constant, Planck’s constant, and the speed of light, respectively. The Rood Axis extends this relationship to dynamic systems by acting as a unifying lens across physical scales.
+
+### L Geometries
+
+L Geometries provide a quantized framework for dimensional recursion, bridging primitive shapes like spheres, cubes, and pyramids:
+\[ L_n = \phi^n \cdot h \cdot \left( \frac{1}{\sqrt{2}} \right)^n \]
+
+Where:
+- \( \phi \): The golden ratio, reflecting harmonic growth.
+- \( h \): Planck’s constant, grounding the quantization.
+- \( \frac{1}{\sqrt{2}} \): The recursive retrograde wobble factor.
+
+These quantized steps unify primitive shapes into a harmonic lattice, enabling recursive dimensional flattening and growth.
+---
