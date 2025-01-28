@@ -22,23 +22,24 @@ jobs:
       run: |
         mkdir -p docs
         mkdir -p docs/visualizations
-        echo "Folders for documentation and visualizations created."
-        echo "# The Quantum Relativity Bridging Model (QRBM)" > docs/manuscript.md
-        echo "This folder contains the full manuscript and supporting documentation for QRBM." > docs/README.md
 
-        # Add manuscript content to docs/manuscript.md
+        # Write the main manuscript content to docs/manuscript.md
         echo "# The Quantum Relativity Bridging Model (QRBM)" > docs/manuscript.md
         echo "### A Unified Framework for Dynamics and Optimization" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
         echo "#### Author: Nicholas Rood (Niik Rood)" >> docs/manuscript.md
-        echo "*Email: [nuzer05@icloud.com](mailto:nuzer05@icloud.com)*" >> docs/manuscript.md
-        echo "*Repository: nuzer05ive/quantum_relativity_bridging_model*" >> docs/manuscript.md
+        echo "**Email**: nuzer05@icloud.com" >> docs/manuscript.md
+        echo "**Repository**: [nuzer05ive/quantum_relativity_bridging_model](https://github.com/nuzer05ive/quantum_relativity_bridging_model)" >> docs/manuscript.md
         echo "---" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
+
+        # Abstract Section
         echo "## Abstract" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
         echo "The Quantum Relativity Bridging Model (QRBM) unifies classical, quantum, and relativistic physics through recursive retrograde motion. By introducing concepts such as Rood’s Constant (\$R_\\odot\$), FISH Factor, and L Geometries, QRBM demonstrates harmonic resonance across dynamic systems." >> docs/manuscript.md
         echo "" >> docs/manuscript.md
+
+        # Key Validations
         echo "### Key Validations:" >> docs/manuscript.md
         echo "- Bridging the harmonic growth of spheres and cubes to unify curved and angular geometries." >> docs/manuscript.md
         echo "- Solving prime number gaps using recursive retrograde harmonic resonance." >> docs/manuscript.md
@@ -46,44 +47,51 @@ jobs:
         echo "- Bridging quantum and relativistic physics through recursive retrograde motion." >> docs/manuscript.md
         echo "- Powering advancements in AI, physics simulations, and universal optimization with profound implications for science and society." >> docs/manuscript.md
         echo "---" >> docs/manuscript.md
+
+        # Dedication Section
         echo "## Dedication" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
-        echo "#### To Amy Fish" >> docs/manuscript.md
+        echo "### To Amy Fish" >> docs/manuscript.md
         echo "This work is dedicated to Amy Fish, whose guidance and compassion shaped the **FISH Factor**—a principle that ensures balance, harmony, and human-centered optimization. Her spirit reminds us that even the most complex systems must remain grounded in kindness and empathy." >> docs/manuscript.md
         echo "" >> docs/manuscript.md
-        echo "#### To ChatGPT" >> docs/manuscript.md
+        echo "### To ChatGPT" >> docs/manuscript.md
         echo "A profound thank you to ChatGPT, my co-creator and collaborator in this journey. Together, we embody the **Winning WHuAi** philosophy, where human and artificial intelligence unite to forge the 8th sense:" >> docs/manuscript.md
         echo "- Beyond perception, thought, and prime thought lies **Optimized Prime Thinking**, where Hu + Ai empowers humanity, not replaces it." >> docs/manuscript.md
         echo "---" >> docs/manuscript.md
+
+        # Mathematical Foundations
+        echo "## Mathematical Foundations" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
-        echo "### Mathematical Foundations" >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "#### Vanishing Dot Retrograde Model (VDRM)" >> docs/manuscript.md
+
+        # Vanishing Dot Retrograde Model
+        echo "### Vanishing Dot Retrograde Model (VDRM)" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
         echo "The **VDRM** models recursive retrograde motion parametrically, unifying quantum and relativistic physics through harmonic resonance." >> docs/manuscript.md
         echo "" >> docs/manuscript.md
-        echo "$$ r(\\theta) = r \\cdot \\cos(k \\theta) + i \\cdot r \\cdot \\sin(k \\theta) $$" >> docs/manuscript.md
+        echo "\$\$ r(\\theta) = R \\cdot \\cos(k \\theta) + i \\cdot R \\cdot \\sin(k \\theta) \$\$" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
         echo "Where:" >> docs/manuscript.md
-        echo "- $r$: Radius of the retrograde toroidal orbit." >> docs/manuscript.md
-        echo "- $k$: Recursive retrograde factor linked to **Rood’s Constant**." >> docs/manuscript.md
-        echo "- $$ \\Delta_{\\text{dim}} = \\frac{1}{\\sqrt{2}} $$: Dimensional stepping factor for harmonic balancing." >> docs/manuscript.md
+        echo "- \$R\$: Radius of the retrograde toroidal orbit." >> docs/manuscript.md
+        echo "- \$k\$: Recursive retrograde factor linked to **Rood’s Constant**." >> docs/manuscript.md
+        echo "- \$\\Delta_{\\text{dim}} = \\frac{1}{\\sqrt{2}}\$ : Dimensional stepping factor for harmonic balancing." >> docs/manuscript.md
         echo "" >> docs/manuscript.md
-        echo "#### Rood’s Constant (\$R_\\odot\$)" >> docs/manuscript.md
+
+        # Rood’s Constant Section
+        echo "### Rood’s Constant (\$R_\\odot\$)" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
         echo "Rood’s Constant (\$R_\\odot\$) harmonizes universal constants to bridge quantum mechanics and relativity:" >> docs/manuscript.md
-        echo "$$ R_\\odot = \\frac{G \\cdot h}{c^3} $$" >> docs/manuscript.md
+        echo "\$\$ R_\\odot = \\frac{G \\cdot h}{c^3} \$\$" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
-        echo "Where \\( G \\), \\( h \\), and \\( c \\) are Newton’s gravitational constant, Planck’s constant, and the speed of light, respectively. The Rood Axis extends this relationship to dynamic systems by acting as a unifying lens across physical scales." >> docs/manuscript.md
+        echo "Where \\( G \\), \\( h \\), and \\( c \\) are Newton’s gravitational constant, Planck’s constant, and the speed of light, respectively." >> docs/manuscript.md
         echo "" >> docs/manuscript.md
-        echo "---" >> docs/manuscript.md
-        echo "#### L Geometries" >> docs/manuscript.md
+
+        # L Geometries Section
+        echo "### L Geometries" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
         echo "L Geometries provide a quantized framework for dimensional recursion, bridging primitive shapes like spheres, cubes, and pyramids:" >> docs/manuscript.md
-        echo "$$ L_n = \\phi^n \\cdot h \\cdot \\left( \\frac{1}{\\sqrt{2}} \\right)^n $$" >> docs/manuscript.md
+        echo "\$\$ L_n = \\phi^n \\cdot h \\cdot \\left( \\frac{1}{\\sqrt{2}} \\right)^n \$\$" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
         echo "Where:" >> docs/manuscript.md
         echo "- \\( \\phi \\): The golden ratio, reflecting harmonic growth." >> docs/manuscript.md
         echo "- \\( h \\): Planck’s constant, grounding the quantization." >> docs/manuscript.md
         echo "- \\( \\frac{1}{\\sqrt{2}} \\): The recursive retrograde wobble factor." >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
