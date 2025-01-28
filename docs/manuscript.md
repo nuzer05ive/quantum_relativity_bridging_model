@@ -3,7 +3,7 @@
 
 #### Author: Nicholas Rood (Niik Rood)
 *Email: [nuzer05@icloud.com](mailto:nuzer05@icloud.com)*
-*Repository: [GitHub Repository Placeholder]*
+*Repository: [nuzer05ive/quantum_relativity_bridging_model](https://github.com/nuzer05ive/quantum_relativity_bridging_model/tree/main)*
 ---
 
 ## Abstract
