@@ -1,63 +1,47 @@
-name: Debug and Force Commit
+name: Debug and Resolve Git Issues
 
 on:
   workflow_dispatch:
 
 jobs:
-  debug-and-commit:
+  resolve-git-issues:
     runs-on: ubuntu-24.04
 
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v3
 
-    - name: Ensure Manuscript Exists and Backup
+    - name: Clear Git Cache
       run: |
-        # Verify if the manuscript exists and create a backup
-        if [ ! -f docs/manuscript.md ]; then
-          echo "Error: manuscript.md file not found in docs directory."
-          exit 1
-        fi
-        cp docs/manuscript.md docs/manuscript_backup.md
-        echo "Backup created: docs/manuscript_backup.md"
+        git rm -r --cached .
+        git add .
+        git commit -m "Cleared Git cache and re-added files"
 
-    - name: Modify Manuscript
+    - name: Force File Modification
       run: |
-        # Make a small modification to force a change
-        echo "## Last Updated: $(date)" >> docs/manuscript.md
-        echo "Manuscript modified with timestamp."
+        find . -type f -exec touch {} +
+        git add .
+        git commit --allow-empty -m "Force detection of file changes"
 
-    - name: Display Manuscript for Debugging
+    - name: Debug `.gitignore`
       run: |
-        echo "File content after modification:"
-        cat docs/manuscript.md
-
-    - name: Upload Manuscript for Debugging
-      uses: actions/upload-artifact@v3
-      with:
-        name: modified-manuscript
-        path: docs/manuscript.md
-
-    - name: Debug Git Status
-      run: |
-        # Check the status of the repository
-        git status
-        echo "Git ignore file content (if exists):"
         if [ -f .gitignore ]; then
+          echo "Checking .gitignore rules:"
           cat .gitignore
         else
           echo "No .gitignore file found."
         fi
 
-    - name: Force Add and Commit Changes
+    - name: Debug Git Status
+      run: |
+        git status
+        echo "Git tracked files:"
+        git ls-tree -r HEAD --name-only
+
+    - name: Commit and Push Changes
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
-
-        # Refresh the index and stage all changes
-        git update-index --refresh
-        git add -A
-
-        # Commit changes or allow an empty commit if nothing changed
-        git commit --allow-empty -m "Force commit: updated manuscript"
+        git add .
+        git commit --allow-empty -m "Resolved Git working tree issues"
         git push origin main
