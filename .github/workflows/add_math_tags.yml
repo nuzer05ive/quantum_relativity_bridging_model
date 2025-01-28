@@ -13,33 +13,28 @@ jobs:
 
     - name: Ensure manuscript exists and create a backup
       run: |
-        # Check if the manuscript file exists
         if [ ! -f docs/manuscript.md ]; then
           echo "Error: manuscript.md file not found in docs directory."
           exit 1
         fi
-
-        # Create a backup of the manuscript
         cp docs/manuscript.md docs/manuscript_backup.md
-        echo "Backup created: manuscript_backup.md"
 
     - name: Add math tags to symbols and equations
       run: |
-        # Add math tags to inline equations (e.g., \(E=mc^2\) -> $E=mc^2$)
         sed -i -E 's/\\(([^)]+)\\)/$\1$/g' docs/manuscript.md
-
-        # Add math tags to block equations (e.g., \[E=mc^2\] -> $$E=mc^2$$)
         sed -i -E 's/^\\\[(.+)\]$/$$\1$$/g' docs/manuscript.md
-
-        # Escape special characters (_ and ^) for Markdown rendering
         sed -i -E 's/\\([_^])/\\\1/g' docs/manuscript.md
 
-        echo "Math tags added successfully."
+    - name: Display Modified Manuscript
+      run: cat docs/manuscript.md
 
-    - name: Commit updated manuscript
+    - name: Force Git Changes
+      run: echo "## Last Updated: $(date)" >> docs/manuscript.md
+
+    - name: Commit and Push Changes
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
-        git add docs/manuscript.md
-        git commit -m "Added math tags to symbols and equations"
-        git push
+        git add .
+        git commit -m "Added math tags and updated manuscript"
+        git push origin main
