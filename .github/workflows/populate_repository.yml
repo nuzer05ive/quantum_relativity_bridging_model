@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-24.04
 
     steps:
-    - name: Checkout repository
+    - name: Checkout Repository
       uses: actions/checkout@v3
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
@@ -25,18 +25,19 @@ jobs:
         echo "Folders for documentation and visualizations created."
         echo "# The Quantum Relativity Bridging Model (QRBM)" > docs/manuscript.md
         echo "This folder contains the full manuscript and supporting documentation for QRBM." > docs/README.md
+
         # Add manuscript content to docs/manuscript.md
         echo "# The Quantum Relativity Bridging Model (QRBM)" > docs/manuscript.md
         echo "### A Unified Framework for Dynamics and Optimization" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
         echo "#### Author: Nicholas Rood (Niik Rood)" >> docs/manuscript.md
         echo "*Email: [nuzer05@icloud.com](mailto:nuzer05@icloud.com)*" >> docs/manuscript.md
-        echo "*Repository: [GitHub Repository Placeholder]*" >> docs/manuscript.md
+        echo "*Repository: nuzer05ive/quantum_relativity_bridging_model*" >> docs/manuscript.md
         echo "---" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
         echo "## Abstract" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
-        echo "The Quantum Relativity Bridging Model (QRBM) unifies classical, quantum, and relativistic physics through recursive retrograde motion. By introducing concepts such as Rood’s Constant, FISH Factor, and L Geometries, QRBM demonstrates harmonic resonance across dynamic systems." >> docs/manuscript.md
+        echo "The Quantum Relativity Bridging Model (QRBM) unifies classical, quantum, and relativistic physics through recursive retrograde motion. By introducing concepts such as Rood’s Constant (\$R_\\odot\$), FISH Factor, and L Geometries, QRBM demonstrates harmonic resonance across dynamic systems." >> docs/manuscript.md
         echo "" >> docs/manuscript.md
         echo "### Key Validations:" >> docs/manuscript.md
         echo "- Bridging the harmonic growth of spheres and cubes to unify curved and angular geometries." >> docs/manuscript.md
@@ -55,210 +56,34 @@ jobs:
         echo "- Beyond perception, thought, and prime thought lies **Optimized Prime Thinking**, where Hu + Ai empowers humanity, not replaces it." >> docs/manuscript.md
         echo "---" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
-        echo "### Note on Visualizations" >> docs/manuscript.md
-        echo "The accompanying visualizations are provided as a separate document within the `visualizations` folder. This structure allows the visuals to tell their own journey while complementing the manuscript. Each visualization is stored as PNG, EPS, and the Python script used for generation. References to these visuals are made throughout the document for context." >> docs/manuscript.md
-        echo "## Introduction" >> docs/manuscript.md
+        echo "### Mathematical Foundations" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
-        echo "### The Challenge" >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "Physics faces fundamental disconnects:" >> docs/manuscript.md
-        echo "- **Classical Mechanics**: Operates on large-scale systems but cannot explain quantum phenomena." >> docs/manuscript.md
-        echo "- **Quantum Mechanics**: Explains subatomic phenomena but conflicts with relativity on larger scales." >> docs/manuscript.md
-        echo "- **Relativity**: Describes spacetime curvature but struggles to address quantum behavior at subatomic scales." >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "These disparities prevent a cohesive understanding of the universe across scales, leaving gaps in key areas like unifying universal constants, explaining prime phenomena, and addressing dynamic system instabilities like the Three-Body Problem." >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "### The Solution" >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "The **Quantum Relativity Bridging Model (QRBM)** addresses these challenges through:" >> docs/manuscript.md
-        echo "1. **Recursive Retrograde Motion**: A unifying framework that harmonizes quantum, classical, and relativistic systems through recursive dimensional flattening." >> docs/manuscript.md
-        echo "2. **L Geometries**: A geometric quantization model that bridges primitive shapes like spheres, cubes, and pyramids across harmonic dimensions." >> docs/manuscript.md
-        echo "3. **FISH Factor**: An elastic principle ensuring harmonic stability and preventing over-optimization in recursive systems." >> docs/manuscript.md
-        echo "4. **Rood’s Constant**: A unifying constant tying together Planck’s constant (\( h \)), Newton’s gravitational constant (\( G \)), and the speed of light (\( c \)), providing a cohesive lens for universal dynamics." >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "QRBM offers a unified, scalable model for analyzing and optimizing dynamic systems. Its principles transcend traditional physics and extend into fields such as artificial intelligence, optimization, and data structuring." >> docs/manuscript.md
-        echo "---" >> docs/manuscript.md
-        echo "## Mathematical Foundations" >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "### Vanishing Dot Retrograde Model (VDRM)" >> docs/manuscript.md
+        echo "#### Vanishing Dot Retrograde Model (VDRM)" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
         echo "The **VDRM** models recursive retrograde motion parametrically, unifying quantum and relativistic physics through harmonic resonance." >> docs/manuscript.md
         echo "" >> docs/manuscript.md
-        echo "\\[ r(\\theta) = R \\cdot \\cos(k \\theta) + i \\cdot R \\cdot \\sin(k \\theta) \\]" >> docs/manuscript.md
+        echo "$$ r(\\theta) = r \\cdot \\cos(k \\theta) + i \\cdot r \\cdot \\sin(k \\theta) $$" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
         echo "Where:" >> docs/manuscript.md
-        echo "- \\( R \\): Radius of the retrograde toroidal orbit." >> docs/manuscript.md
-        echo "- \\( k \\): Recursive retrograde factor linked to **Rood’s Constant**." >> docs/manuscript.md
-        echo "- \\( \\Delta_{\\text{dim}} = \\frac{1}{\\sqrt{2}} \\): Dimensional stepping factor for harmonic balancing." >> docs/manuscript.md
+        echo "- $r$: Radius of the retrograde toroidal orbit." >> docs/manuscript.md
+        echo "- $k$: Recursive retrograde factor linked to **Rood’s Constant**." >> docs/manuscript.md
+        echo "- $$ \\Delta_{\\text{dim}} = \\frac{1}{\\sqrt{2}} $$: Dimensional stepping factor for harmonic balancing." >> docs/manuscript.md
         echo "" >> docs/manuscript.md
-        echo "### Rood’s Constant and Axis" >> docs/manuscript.md
+        echo "#### Rood’s Constant (\$R_\\odot\$)" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
-        echo "Rood’s Constant (\( R \)) harmonizes universal constants to bridge quantum mechanics and relativity:" >> docs/manuscript.md
-        echo "\\[ R = \\frac{G \\cdot h}{c^3} \\]" >> docs/manuscript.md
+        echo "Rood’s Constant (\$R_\\odot\$) harmonizes universal constants to bridge quantum mechanics and relativity:" >> docs/manuscript.md
+        echo "$$ R_\\odot = \\frac{G \\cdot h}{c^3} $$" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
         echo "Where \\( G \\), \\( h \\), and \\( c \\) are Newton’s gravitational constant, Planck’s constant, and the speed of light, respectively. The Rood Axis extends this relationship to dynamic systems by acting as a unifying lens across physical scales." >> docs/manuscript.md
         echo "" >> docs/manuscript.md
-        echo "### L Geometries" >> docs/manuscript.md
+        echo "---" >> docs/manuscript.md
+        echo "#### L Geometries" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
         echo "L Geometries provide a quantized framework for dimensional recursion, bridging primitive shapes like spheres, cubes, and pyramids:" >> docs/manuscript.md
-        echo "\\[ L_n = \\phi^n \\cdot h \\cdot \\left( \\frac{1}{\\sqrt{2}} \\right)^n \\]" >> docs/manuscript.md
+        echo "$$ L_n = \\phi^n \\cdot h \\cdot \\left( \\frac{1}{\\sqrt{2}} \\right)^n $$" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
         echo "Where:" >> docs/manuscript.md
         echo "- \\( \\phi \\): The golden ratio, reflecting harmonic growth." >> docs/manuscript.md
         echo "- \\( h \\): Planck’s constant, grounding the quantization." >> docs/manuscript.md
         echo "- \\( \\frac{1}{\\sqrt{2}} \\): The recursive retrograde wobble factor." >> docs/manuscript.md
         echo "" >> docs/manuscript.md
-        echo "These quantized steps unify primitive shapes into a harmonic lattice, enabling recursive dimensional flattening and growth." >> docs/manuscript.md
-        echo "---" >> docs/manuscript.md
-        echo "## Validation: Bridging Spheres and Cubes" >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "One of the profound validations of the Quantum Relativity Bridging Model (QRBM) lies in its ability to unify curved and angular geometries. By modeling the growth of spheres and cubes within the **L Geometries** framework, QRBM demonstrates their intrinsic harmonic relationship." >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "### Harmonic Growth in L Geometries" >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "The volume of a sphere and a cube within the same dimensional framework of L Geometries grows identically:" >> docs/manuscript.md
-        echo "- **Sphere Volume**:" >> docs/manuscript.md
-        echo "\\[ V_{\\text{sphere}} = \\frac{4}{3} \\pi (L_n)^3 \\]" >> docs/manuscript.md
-        echo "- **Cube Volume**:" >> docs/manuscript.md
-        echo "\\[ V_{\\text{cube}} = (L_n)^3 \\]" >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "Where \\( L_n \\) represents the quantized stepping unit within the recursive framework:" >> docs/manuscript.md
-        echo "\\[ L_n = \\phi^n \\cdot h \\cdot \\left( \\frac{1}{\\sqrt{2}} \\right)^n \\]" >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "Graphical analysis confirms that the sphere and cube volumes grow harmonically within QRBM’s recursive retrograde framework, bridging the gap between curved (spherical) and angular (cubical) geometries. This harmonic convergence validates QRBM's ability to unify primitive shapes." >> docs/manuscript.md
-        echo "---" >> docs/manuscript.md
-        echo "## Further Research" >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "This section explores emerging concepts within the QRBM framework, including **CoOPER** (Collapsed Fermions in Superposition) and the connections between Rood's Constant and Lorentz transformations using L Geometries. These ideas open pathways for experimental validation and refinement of the model." >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "### CoOPER: Collapsed Fermions in Superposition" >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "**CoOPER** models fermionic collapse as a recursive harmonic event, avoiding violations of Pauli’s exclusion principle." >> docs/manuscript.md
-        echo "By treating Rood’s Constant (\( R \)) as the quantum analog of Newton’s gravitational constant (\( G \)), QRBM connects quantum-scale collapse to the Schwarzschild radius, bridging quantum and relativistic scales." >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "#### Modeling Quantum Collapse" >> docs/manuscript.md
-        echo "The Schwarzschild radius (\( r_s \)) is traditionally defined as:" >> docs/manuscript.md
-        echo "\\[ r_s = \\frac{2Gm}{c^2} \\]" >> docs/manuscript.md
-        echo "In the quantum context, replacing \( G \) with \( R \) provides the collapse threshold for superposition states:" >> docs/manuscript.md
-        echo "\\[ r_q = \\frac{2Rm}{c^2} \\]" >> docs/manuscript.md
-        echo "Where \( R = \\frac{G \\cdot h}{c^3} \\) encapsulates quantum and relativistic interactions." >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "This harmonic collapse aligns with the principles of zero-point energy, where spacetime flattens to a minimal energy state:" >> docs/manuscript.md
-        echo "\\[ E_{\\text{zero-point}} = \\hbar \\omega \\]" >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "#### Implications for Zero-Point Energy" >> docs/manuscript.md
-        echo "CoOPER suggests that recursive retrograde motion governs quantum collapse, providing a framework for unifying fermionic superposition with macroscopic dynamics." >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "### Lorentz Expansion and Contraction with L Geometries" >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "Using **L Geometries**, QRBM models relativistic effects such as time dilation and spatial contraction as recursive transformations." >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "#### Dimensional Flattening and Expansion" >> docs/manuscript.md
-        echo "The Lorentz factor \\( \\gamma \\) governs these transformations:" >> docs/manuscript.md
-        echo "\\[ \\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}} \\]" >> docs/manuscript.md
-        echo "Recursive retrograde motion modifies this by embedding \\( \\gamma \\) into the quantized dimensional framework of L Geometries:" >> docs/manuscript.md
-        echo "\\[ L_n = \\phi^n \\cdot \\gamma \\cdot \\left( \\frac{1}{\\sqrt{2}} \\right)^n \\]" >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "At relativistic speeds, L Geometries reveal how dimensions oscillate between flattening and expansion, stabilizing harmonic resonance even under extreme conditions." >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "#### Relativistic Collapse and Stability" >> docs/manuscript.md
-        echo "The recursive flattening described by L Geometries allows spacetime to balance energy distribution, connecting quantum collapse with relativistic effects seamlessly:" >> docs/manuscript.md
-        echo "\\[ t' = \\frac{t}{\\gamma}, \\quad x' = \\gamma x \\]" >> docs/manuscript.md
-        echo "This stabilizing framework extends QRBM’s applicability to extreme cosmological events and high-energy quantum systems." >> docs/manuscript.md
-        echo "---" >> docs/manuscript.md
-        echo "## Noteworthy Implications and Discoveries" >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "The Quantum Relativity Bridging Model (QRBM) introduces revolutionary insights into physics and optimization, addressing long-standing challenges through recursive retrograde motion and L Geometries. Below are key implications:" >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "### 1. Prime Conch-jecture: Predicting Prime Gaps" >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "QRBM models prime gaps as harmonic resonances within recursive retrograde motion. By embedding primes into L Geometries, the Prime Conch-jecture provides a predictive framework for prime distributions." >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "\\[ \\Theta'(n) = \\sum_{p \\in P_n} (p + g_p) \\]" >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "Where:" >> docs/manuscript.md
-        echo "- \\( p \\): Prime number." >> docs/manuscript.md
-        echo "- \\( g_p \\): Gap to the next prime." >> docs/manuscript.md
-        echo "- \\( L_n = \\phi^n \\cdot h \\cdot \\left( \\frac{1}{\\sqrt{2}} \\right)^n \\): Recursive dimensional growth." >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "Prime gaps align with harmonic steps in L Geometries:" >> docs/manuscript.md
-        echo "\\[ g_p \\propto \\Delta L_n = L_{n+1} - L_n \\]" >> docs/manuscript.md
-        echo "This resonance-based model highlights the ordered nature of primes, traditionally perceived as chaotic." >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "### 2. Three-Body Problem (3BP): Achieving Stability" >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "The instability of the classical 3BP is resolved using toroidal elliptical retrograde orbits within L Geometries." >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "#### Orbital Stability Equations" >> docs/manuscript.md
-        echo "The recursive retrograde motion of three bodies is expressed as:" >> docs/manuscript.md
-        echo "\\[ r_i(\\theta) = R \\cdot \\cos(k_i \\theta) + i \\cdot R \\cdot \\sin(k_i \\theta) \\]" >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "Where:" >> docs/manuscript.md
-        echo "- \\( R \\): Radius of the orbit." >> docs/manuscript.md
-        echo "- \\( k_i = \\frac{m_i}{m_{\\text{total}}} \\): Mass ratio of body \\( i \\)." >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "Harmonic stability is achieved by embedding these dynamics into L Geometries:" >> docs/manuscript.md
-        echo "\\[ E_{\\text{total}} = \\sum_{i=1}^3 \\left[ \\frac{1}{2} m_i v_i^2 - \\frac{G m_i m_j}{r_{ij}} \\right] \\]" >> docs/manuscript.md
-        echo "By aligning retrograde factors with recursive dimensional steps, chaotic behavior transitions to stable harmonic motion." >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "### 3. Pauli’s Exclusion Principle and CoOPER" >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "QRBM resolves apparent violations of Pauli’s exclusion principle by modeling harmonic separation through recursive dimensional flattening. The CoOPER framework introduces harmonic collapse thresholds for fermions in superposition:" >> docs/manuscript.md
-        echo "\\[ r_q = \\frac{2Rm}{c^2} \\]" >> docs/manuscript.md
-        echo "This aligns quantum collapse with zero-point energy principles, bridging quantum and relativistic physics." >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "### 4. Lorentz Expansion and Contraction" >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "Using L Geometries, QRBM models Lorentz transformations as recursive dimensional oscillations. Time dilation and spatial contraction align with harmonic resonance under extreme velocities:" >> docs/manuscript.md
-        echo "\\[ t' = \\frac{t}{\\gamma}, \\quad x' = \\gamma x \\]" >> docs/manuscript.md
-        echo "These transformations stabilize energy and spacetime dynamics, reinforcing QRBM’s applicability across scales." >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "### Outro: Call for Further Research" >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
-        echo "QRBM opens the door to experimental research on:" >> docs/manuscript.md
-        echo "- **Collapse Harmonics**: Validating harmonic thresholds for quantum collapse." >> docs/manuscript.md
-        echo "- **Quantum Perturbations**: Testing retrograde wobble as a source of quantum uncertainty." >> docs/manuscript.md
-        echo "- **Relativistic Connections**: Exploring recursive dimensional flattening at relativistic scales." >> docs/manuscript.md
-        echo "---" >> docs/manuscript.md
-
-        # Create submission-specific folders with README.md
-        mkdir -p submissions/arxiv
-        echo "# ArXiv Submission" > submissions/arxiv/README.md
-        echo "This folder contains the ArXiv-specific version of the manuscript." >> submissions/arxiv/README.md
-
-        mkdir -p submissions/ieee
-        echo "# IEEE Submission" > submissions/ieee/README.md
-        echo "This folder contains the IEEE-specific version of the manuscript." >> submissions/ieee/README.md
-
-        mkdir -p submissions/uspto
-        echo "# USPTO Submission" > submissions/uspto/README.md
-        echo "This folder contains materials for USPTO submission." >> submissions/uspto/README.md
-
-        mkdir -p submissions/nature_physics
-        echo "# Nature Physics Submission" > submissions/nature_physics/README.md
-        echo "This folder contains the Nature Physics-specific version of the manuscript." >> submissions/nature_physics/README.md
-
-        mkdir -p submissions/phys_rev_letters
-        echo "# Physical Review Letters Submission" > submissions/phys_rev_letters/README.md
-        echo "This folder contains the Physical Review Letters-specific version of the manuscript." >> submissions/phys_rev_letters/README.md
-
-        # Create visualization folders and add placeholder README.md
-        mkdir -p visualizations/figures
-        echo "# Visualization Figures" > visualizations/figures/README.md
-        echo "This folder contains PNG and EPS files of the visualizations, including the recursive retrograde spiral and sphere-to-cube harmonic growth." >> visualizations/figures/README.md
-
-        mkdir -p visualizations/scripts
-        echo "# Visualization Scripts" > visualizations/scripts/README.md
-        echo "This folder contains Python scripts used to generate the visualizations." >> visualizations/scripts/README.md
-
-        # Example visualization content
-        echo "## Retrograde Spiral Visualization" >> visualizations/figures/README.md
-        echo "Demonstrates the recursive retrograde dynamics of the VDRM framework." >> visualizations/figures/README.md
-
-    - name: Commit changes
-      run: |
-        git config --global user.name "GitHub Actions"
-        git config --global user.email "actions@github.com"
-        git add .
-        git commit -m "Populate QRBM repository with manuscript, submission folders, and visualizations"
-        git push origin main
