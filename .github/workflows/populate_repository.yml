@@ -36,7 +36,7 @@ jobs:
         # Abstract Section
         echo "## Abstract" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
-        echo "The Quantum Relativity Bridging Model (QRBM) unifies classical, quantum, and relativistic physics through recursive retrograde motion. By introducing concepts such as Rood’s Constant (\$R_\\odot\$), FISH Factor, and L Geometries, QRBM demonstrates harmonic resonance across dynamic systems." >> docs/manuscript.md
+        echo "The Quantum Relativity Bridging Model (QRBM) unifies classical, quantum, and relativistic physics through recursive retrograde motion. By introducing concepts such as Rood’s Constant (\$R_\odot\$), FISH Factor, and L Geometries, QRBM demonstrates harmonic resonance across dynamic systems." >> docs/manuscript.md
         echo "" >> docs/manuscript.md
 
         # Key Validations
@@ -68,30 +68,30 @@ jobs:
         echo "" >> docs/manuscript.md
         echo "The **VDRM** models recursive retrograde motion parametrically, unifying quantum and relativistic physics through harmonic resonance." >> docs/manuscript.md
         echo "" >> docs/manuscript.md
-        echo "\$\$ r(\\theta) = R \\cdot \\cos(k \\theta) + i \\cdot R \\cdot \\sin(k \\theta) \$\$" >> docs/manuscript.md
+        echo "$$ r(\\theta) = R \\cdot \\cos(k \\theta) + i \\cdot R \\cdot \\sin(k \\theta) $$" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
         echo "Where:" >> docs/manuscript.md
-        echo "- \$R\$: Radius of the retrograde toroidal orbit." >> docs/manuscript.md
-        echo "- \$k\$: Recursive retrograde factor linked to **Rood’s Constant**." >> docs/manuscript.md
-        echo "- \$\\Delta_{\\text{dim}} = \\frac{1}{\\sqrt{2}}\$ : Dimensional stepping factor for harmonic balancing." >> docs/manuscript.md
+        echo "- \( R \): Radius of the retrograde toroidal orbit." >> docs/manuscript.md
+        echo "- \( k \): Recursive retrograde factor linked to **Rood’s Constant**." >> docs/manuscript.md
+        echo "- \( \Delta_{\text{dim}} = \frac{1}{\sqrt{2}} \): Dimensional stepping factor for harmonic balancing." >> docs/manuscript.md
         echo "" >> docs/manuscript.md
 
         # Rood’s Constant Section
-        echo "### Rood’s Constant (\$R_\\odot\$)" >> docs/manuscript.md
+        echo "### Rood’s Constant (\$R_\odot\$)" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
-        echo "Rood’s Constant (\$R_\\odot\$) harmonizes universal constants to bridge quantum mechanics and relativity:" >> docs/manuscript.md
-        echo "\$\$ R_\\odot = \\frac{G \\cdot h}{c^3} \$\$" >> docs/manuscript.md
+        echo "Rood’s Constant (\$R_\odot\$) harmonizes universal constants to bridge quantum mechanics and relativity:" >> docs/manuscript.md
+        echo "$$ R_\odot = \frac{G \cdot h}{c^3} $$" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
-        echo "Where \\( G \\), \\( h \\), and \\( c \\) are Newton’s gravitational constant, Planck’s constant, and the speed of light, respectively." >> docs/manuscript.md
+        echo "Where \( G \), \( h \), and \( c \) are Newton’s gravitational constant, Planck’s constant, and the speed of light, respectively." >> docs/manuscript.md
         echo "" >> docs/manuscript.md
 
         # L Geometries Section
         echo "### L Geometries" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
         echo "L Geometries provide a quantized framework for dimensional recursion, bridging primitive shapes like spheres, cubes, and pyramids:" >> docs/manuscript.md
-        echo "\$\$ L_n = \\phi^n \\cdot h \\cdot \\left( \\frac{1}{\\sqrt{2}} \\right)^n \$\$" >> docs/manuscript.md
+        echo "$$ L_n = \phi^n \cdot h \cdot \left( \frac{1}{\sqrt{2}} \right)^n $$" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
         echo "Where:" >> docs/manuscript.md
-        echo "- \\( \\phi \\): The golden ratio, reflecting harmonic growth." >> docs/manuscript.md
-        echo "- \\( h \\): Planck’s constant, grounding the quantization." >> docs/manuscript.md
-        echo "- \\( \\frac{1}{\\sqrt{2}} \\): The recursive retrograde wobble factor." >> docs/manuscript.md
+        echo "- \( \phi \): The golden ratio, reflecting harmonic growth." >> docs/manuscript.md
+        echo "- \( h \): Planck’s constant, grounding the quantization." >> docs/manuscript.md
+        echo "- \( \frac{1}{\sqrt{2}} \): The recursive retrograde wobble factor." >> docs/manuscript.md
