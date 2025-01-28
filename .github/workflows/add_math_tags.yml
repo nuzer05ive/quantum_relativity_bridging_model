@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  force-commit:
+  debug-and-commit:
     runs-on: ubuntu-latest
 
     steps:
@@ -13,26 +13,51 @@ jobs:
 
     - name: Ensure Manuscript Exists and Backup
       run: |
+        # Verify if the manuscript exists and create a backup
         if [ ! -f docs/manuscript.md ]; then
           echo "Error: manuscript.md file not found in docs directory."
           exit 1
         fi
         cp docs/manuscript.md docs/manuscript_backup.md
+        echo "Backup created: docs/manuscript_backup.md"
 
     - name: Modify Manuscript
       run: |
-        # Modify the manuscript with dummy data to force a change
+        # Make a small modification to force a change
         echo "## Last Updated: $(date)" >> docs/manuscript.md
+        echo "Manuscript modified with timestamp."
 
-    - name: Force Git to Recheck File Changes
+    - name: Display Manuscript for Debugging
       run: |
-        git update-index --refresh
-        git status
+        echo "File content after modification:"
+        cat docs/manuscript.md
 
-    - name: Commit and Push Changes
+    - name: Upload Manuscript for Debugging
+      uses: actions/upload-artifact@v3
+      with:
+        name: modified-manuscript
+        path: docs/manuscript.md
+
+    - name: Debug Git Status
+      run: |
+        # Check the status of the repository
+        git status
+        echo "Git ignore file content (if exists):"
+        if [ -f .gitignore ]; then
+          cat .gitignore
+        else
+          echo "No .gitignore file found."
+        fi
+
+    - name: Force Add and Commit Changes
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
+
+        # Refresh the index and stage all changes
+        git update-index --refresh
         git add -A
-        git commit --allow-empty -m "Force commit to update repository"
-        git push origin main 
+
+        # Commit changes or allow an empty commit if nothing changed
+        git commit --allow-empty -m "Force commit: updated manuscript"
+        git push origin main
