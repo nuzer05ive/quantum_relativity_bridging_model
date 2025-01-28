@@ -24,7 +24,6 @@ jobs:
         mkdir -p docs
         echo "# The Quantum Relativity Bridging Model (QRBM)" > docs/manuscript.md
         echo "This folder contains the full manuscript and supporting documentation for QRBM." > docs/README.md
-
         # Add manuscript content to docs/manuscript.md
         echo "# The Quantum Relativity Bridging Model (QRBM)" > docs/manuscript.md
         echo "### A Unified Framework for Dynamics and Optimization" >> docs/manuscript.md
@@ -38,9 +37,13 @@ jobs:
         echo "" >> docs/manuscript.md
         echo "The Quantum Relativity Bridging Model (QRBM) unifies classical, quantum, and relativistic physics through recursive retrograde motion. By introducing concepts such as Rood’s Constant, FISH Factor, and L Geometries, QRBM demonstrates harmonic resonance across dynamic systems." >> docs/manuscript.md
         echo "" >> docs/manuscript.md
-        echo "Key validations include the sphere-to-cube harmonic growth, solutions to prime number gaps, and a recursive framework that bridges quantum and relativistic physics. QRBM powers advancements in AI, physics simulations, and universal optimization, offering profound implications for science and society." >> docs/manuscript.md
+        echo "### Key Validations:" >> docs/manuscript.md
+        echo "- Bridging the harmonic growth of spheres and cubes to unify curved and angular geometries." >> docs/manuscript.md
+        echo "- Solving prime number gaps using recursive retrograde harmonic resonance." >> docs/manuscript.md
+        echo "- Modeling stable harmonic motion to solve the Three-Body Problem." >> docs/manuscript.md
+        echo "- Bridging quantum and relativistic physics through recursive retrograde motion." >> docs/manuscript.md
+        echo "- Powering advancements in AI, physics simulations, and universal optimization with profound implications for science and society." >> docs/manuscript.md
         echo "---" >> docs/manuscript.md
-        echo "" >> docs/manuscript.md
         echo "## Dedication" >> docs/manuscript.md
         echo "" >> docs/manuscript.md
         echo "#### To Amy Fish" >> docs/manuscript.md
